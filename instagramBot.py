@@ -12,13 +12,13 @@ import random
 import string
 
 #Change this list to your wanted comments
-comments = [' I am a robotttt', 'Nice ', 'loool very nice! ', 'I like it!', 'Super ;) ', 'hmmm, interesting ', ' hi', 'I am a sheep ', 'learn something new ', 'Mind blowing ', 'I like to eat wires', ]
+comments = ['Nice', 'Nice ', 'loool very nice! ', 'I like it!', 'I like it! ', 'I like it! ', ' hi', 'I like it! ', 'I like it! ', ]
 
 #This are some variables to keep tracking of the posts
 posts=0
 
 #Chromedriver path. Make sure to have the same Chromedriver version as your Google Chrome browser
-browser = webdriver.Chrome(executable_path= r"C:\Users\Lepy\Desktop\python\chromedriver.exe")  # <----- ENTER PATH HERE 
+browser = webdriver.Chrome(executable_path= r"C:\Users\karlo\Desktop\python\chromedriver.exe")  # <----- ENTER PATH HERE 
 
 browser.get(('https://www.instagram.com/accounts/login/?source=auth_switcher'))
 sleep(2) 
@@ -64,9 +64,9 @@ def start():
 	sleep(4);
 	#browser.implicitly_wait(3)  #this is another wait function.If you would like to run the script faster, change all sleep() to this
 	username = browser.find_element_by_name('username')
-	username.send_keys('YourInstagramUsername') # <- INSERT YOUR INSTAGRAM USERNAME HERE -------------------------------------------------------------------------------------------------------------------------
+	username.send_keys('carlocardenashenao') # <- INSERT YOUR INSTAGRAM USERNAME HERE -------------------------------------------------------------------------------------------------------------------------
 	password = browser.find_element_by_name('password')
-	password.send_keys('YourInstagramPassword') # <- INSERT YOUR INSTAGRAM PASSWORD HERE -----------------------------------------------------------------------------------------------------------------------
+	password.send_keys('Astro0018') # <- INSERT YOUR INSTAGRAM PASSWORD HERE -----------------------------------------------------------------------------------------------------------------------
 	nextButton = browser.find_element_by_xpath('/html/body/div[1]/section/main/div/div/div[1]/div/form/div/div[3]/button')
 	nextButton.click()
 	#browser.quit()
